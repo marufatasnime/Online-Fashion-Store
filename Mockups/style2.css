@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+#products_container {
+  padding-top: 5em;
+}
+
+#product_nav {
+  padding-top: 5em;
+  text-align: center;
+}
+
+#showcase {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.category_title {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 5em;
+  margin-bottom: 1em;
+  flex: 0;
+  padding-top: 2em;
+  flex-basis: 100%;
+  text-align: center;
+  border-bottom: 1px solid #b2bec3;
+  color: #b2bec3;
+}
+
+.product_card {
+  margin-left: 0.6%;
+  margin-right: 0.67%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-color: white;
+  flex: 0;
+  min-width: 20em;
+  flex-basis: 32%;
+  height: auto;
+}
+
+.product_card img {
+  width: 100%;
+}
+
+.card_title, .card_price, .card_extra {
+  background-color: white;
+  text-align: center;
+}
