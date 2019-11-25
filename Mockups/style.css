@@ -101,12 +101,9 @@ nav {
 
 .composite_heading {
   position: relative;
-  border-style: solid;
-  border-width: 1px 0 1px 0;
-  border-color: rgba(45, 52, 54, 0.2);
   color: lightskyblue;
   margin: 0 0 3.5rem 0;
-  padding: 1.5vw 0 1.5vw 0;
+  padding: 0;
 }
 
 .composite_heading h1 {
@@ -130,21 +127,4 @@ nav {
   font-size: 6vw;
   color: #2d3436;
   opacity: 0.5;
-}
-
-#carousel_text {
-  position: absolute;
-  top: 43%;
-  width: 100%;
-
-  background-color: #2d3436;
-  text-align: center;
-  z-index: 1;
-  font-size: 4em;
-  opacity: 0.1;
-}
-
-#temp {
-  height: 1200px;
-  background-color: red;
 }

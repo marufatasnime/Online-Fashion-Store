@@ -1,162 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- BOOTSTRAP CSS includes -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet"> 
+  <!-- Defined Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <title>Flamingo</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Turtle</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Women</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Men</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
-      </li>
-    </ul>
+  <nav id="navigation_bar">
+    <h1 id="logo"><a href="#">Flamingo</a></h1>
+    <div id="navigation_links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="hero_image">
+    <div id="hero_text">
+      <h3>All your<h3>
+      <h1>Favourite Dresses</h1>
+    </div>
   </div>
-</nav>
-
-<section id="one">
-<div class="bg">
-  <div class="hero_text">
-    Turtle
-</div>
-<div class="hero_text1">
-    <!-- ---- Wear your dress ---- -->
-</div>
-  <i id="hero_down" class="fa fa-arrow-down border-custom" onclick="smoothScroll(document.getElementById('two'))"></i>
-</div>
-</section>
-<section id="two">
-  
-<div class="two_something">
-  <h1>Trending</h1>
-  <h3>TRENDING<h3>
-
-</div>
-<div class="container">
-  <div class="carousel slide multi-item-carousel" id="theCarousel">
-    <div class="carousel-inner row w-100 mx-auto">
-      <div class="carousel-item active col-md-4">
-        <img src="image/1.webp" class="img-fluid mx-auto d-block">
-        <h3>Young women wearing dress</h3>
-        <h4>$120.00</h4>
-      </div>
-      <div class="carousel-item col-md-4">
-        <img src="image/2.webp" class="img-fluid mx-auto d-block">
-        <h3>Item Title</h3>
-        <h4>Item price</h4>
-      </div>
-      <div class="carousel-item col-md-4">
-        <img src="image/3.webp" class="img-fluid mx-auto d-block">
-        <h3>Item Title</h3>
-        <h4>Item price</h4>
-      </div>
-      <div class="carousel-item col-md-4">
-        <img src="image/4.webp" class="img-fluid mx-auto d-block">
-        <h3>Item Title</h3>
-        <h4>Item price</h4>
-      </div>
-      <div class="carousel-item col-md-4">
-        <img src="image/5.webp" class="img-fluid mx-auto d-block">
-        <h3>Item Title</h3>
-        <h4>Item price</h4>
-      </div>
-      <div class="carousel-item col-md-4">
-        <img src="image/1.webp" class="img-fluid mx-auto d-block">
-        <h3>Item Title</h3>
-        <h4>Item price</h4>
-      </div>
-      <div class="carousel-item col-md-4">
-        <img src="image/2.webp" class="img-fluid mx-auto d-block">
-        <h3>Item Title</h3>
-        <h4>Item price</h4>
-      </div>
-      <div class="carousel-item col-md-4">
-        <img src="image/3.webp" class="img-fluid mx-auto d-block">
-        <h3>Item Title</h3>
-        <h4>Item price</h4>
+  <div class="composite_heading">
+    <h1>Trending</h1>
+    <p>Catch up with the trend</p>
+  </div>
+  <div>
+    <div>
+      <div id="items_carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#items_carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#items_carousel" data-slide-to="1"></li>
+          <li data-target="#items_carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-iterval="1000">
+            <img src="images/image_1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/image_2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/image_3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#items_carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#items_carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#theCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#theCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
-</div>
 
-
-</section>
-
-
-
-
-<script>
-//onclick code
-window.smoothScroll = function(target) {
-    var scrollContainer = target;
-    do { //find scroll container
-        scrollContainer = scrollContainer.parentNode;
-        if (!scrollContainer) return;
-        scrollContainer.scrollTop += 1;
-    } while (scrollContainer.scrollTop == 0);
-    
-    var targetY = 0;
-    do { //find the top of target relatively to the container
-        if (target == scrollContainer) break;
-        targetY += target.offsetTop;
-    } while (target = target.offsetParent);
-    
-    scroll = function(c, a, b, i) {
-        i++; if (i > 30) return;
-        c.scrollTop = a + (b - a) / 30 * i;
-        setTimeout(function(){ scroll(c, a, b, i); }, 20);
-    }
-    // start scrolling
-    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-}
-//slider carousel codes
-$('.multi-item-carousel').on('slide.bs.carousel', function (e) {
-  let $e = $(e.relatedTarget),
-      itemsPerSlide = 3,
-      totalItems = $('.carousel-item', this).length,
-      $itemsContainer = $('.carousel-inner', this),
-      it = itemsPerSlide - (totalItems - $e.index());
-  if (it > 0) {
-    for (var i = 0; i < it; i++) {
-      $('.carousel-item', this).eq(e.direction == "left" ? i : 0).
-        // append slides to the end/beginning
-        appendTo($itemsContainer);
-    }
-  }
-});
-</script>
-
+  <!-- BOOTSTRAP JS includes -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Defined Scripts -->
+  <script src="script.js"></script>
 </body>
-
 </html>
