@@ -66,7 +66,7 @@ nav {
 #hero_image {
   position: relative;
   top: -3.5rem;
-  background-image: url("images/image1.jpg");
+  background-image: url('../images/image1.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,10 +132,36 @@ nav {
   opacity: 0.5;
 }
 
+.messages {
+  position: absolute;
+  z-index: 7;
+  width: 100%;
+  text-align: center;
+  opacity: 0.8;
+}
+
+/* Forms Section */
+
+.form_container {
+  margin-top: 8em;
+  max-width: 600px;
+}
+
+.form_header {
+  color: #636b6f;
+  border-bottom: 1px solid #636b6f;
+  padding-bottom: 0.4em;
+}
+
+.form_body {
+  margin-top: 2em;
+  padding: 0.1em;
+  font-weight: 400;
+}
 
 /* Products Section */
 
-#products_container {
+.products_container {
   padding-top: 5em;
 }
 
@@ -144,7 +170,7 @@ nav {
   text-align: center;
 }
 
-#showcase {
+.showcase {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -175,7 +201,31 @@ nav {
   height: auto;
 }
 
-.product_card img {
+.product_details {
+  background-color: white;
+  text-align: center;
+  padding: 3rem;
+  flex: 0;
+  min-width: 20em;
+  margin-left: 2%;
+  margin-right: 2%;
+  flex-basis: 45%;
+  min-width: 30rem;
+  height: auto;
+}
+
+.product_details div {
+  margin-top: 40%;
+  margin-bottom: 30%;
+  width: 100%;
+}
+
+.product_details button {
+  width: 50%;
+}
+
+.product_card img, 
+.product_details img {
   width: 100%;
 }
 
