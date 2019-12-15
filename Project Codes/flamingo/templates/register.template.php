@@ -12,7 +12,9 @@
         
         <div class="col-md-8">
           <input id="first_name" class="form-control" 
-            type="text" name="first_name" placeholder="" required autocomplete="first_name" autofocus>
+            type="text" name="first_name" placeholder="" value="<?php old_value('first_name'); ?>" 
+            required autocomplete="first_name" autofocus>
+          <div> <?php form_error('first_name'); ?> </div>
         </div>
       </div>
 
@@ -21,7 +23,9 @@
         
         <div class="col-md-8">
           <input id="last_name" class="form-control" 
-            type="text" name="last_name" value="" required autocomplete="last_name">
+            type="text" name="last_name" value="<?php old_value('last_name'); ?>" 
+            required autocomplete="last_name">
+          <div> <?php form_error('last_name'); ?> </div>
         </div>
       </div>
 
@@ -30,16 +34,20 @@
         
         <div class="col-md-8">
           <input id="address" class="form-control" 
-            type="text" name="address" value="" required autocomplete="address">
+            type="text" name="address" value="<?php old_value('address'); ?>" 
+            required autocomplete="address">
+          <div> <?php form_error('address'); ?> </div>
         </div>
       </div>
 
       <div class="form-group row">
-        <label for="email" class="col-md-4">Cellphone Number</label>
+        <label for="user_id" class="col-md-4">Cellphone Number</label>
         
         <div class="col-md-8">
           <input id="user_id" class="form-control" 
-            type="number" name="user_id" value="" required autocomplete="user_id">
+            type="number" name="user_id" value="<?php old_value('user_id'); ?>" 
+            required autocomplete="user_id">
+          <div> <?php form_error('user_id'); ?> </div>
         </div>
       </div>
 
@@ -48,7 +56,9 @@
         
         <div class="col-md-8">
           <input id="email" class="form-control" 
-            type="email" name="email" value="" required autocomplete="email">
+            type="email" name="email" value="<?php old_value('email'); ?>" 
+            required autocomplete="email">
+          <div> <?php form_error('email'); ?> </div>
         </div>
       </div>
 
@@ -58,6 +68,7 @@
         <div class="col-md-8">
           <input id="password" class="form-control" 
             type="password" name="password" value="" required autocomplete="new_password">
+          <div> <?php form_error('password'); ?> </div>
         </div>
       </div>
 

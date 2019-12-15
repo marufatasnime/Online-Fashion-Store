@@ -10,9 +10,10 @@ spl_autoload_register(function ($class) {
   */
   
   require_once "${class}.php";
-  require_once "controllers/PagesController.php";
-  require_once "controllers/AuthenticationController.php";
-  require_once "controllers/ProductsController.php";
+  $controllers = glob('controllers/*.php');
+
+  foreach($controllers as $controller)
+    require_once $controller;
 });
 
 abstract class Framework {

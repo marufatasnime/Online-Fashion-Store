@@ -7,7 +7,7 @@
       <li><a href="/flamingo/products/men">Men</a></li>
       <li><a href="#">About Us</a></li>
       <?php if($logged_in): ?>
-      <li><a href="">Cart</a></li>
+      <li><a href="/flamingo/cart/">Cart [<?php echo $_SESSION['cart_items']; ?>]</a></li>
       <li><a href="#"><?php echo $user->first_name; ?></a></li>
       <li><a href="/flamingo/logout/">Logout</a></li>
       <?php else: ?>

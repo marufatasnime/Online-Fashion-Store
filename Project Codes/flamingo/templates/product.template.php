@@ -2,6 +2,7 @@
 
 <?php function block_body($context) { ?>
 
+<?php $product = $context['product']; ?>
 <div class="products_container">
   <div class="showcase">
     <div class="product_details">
@@ -10,10 +11,10 @@
     
     <div class="product_details">
       <div>
-        <h1><?php echo $context['product']->name; ?></h1>
-        <h4><?php echo $context['product']->price; ?></h4>
+        <h1><?php echo $product->name; ?></h1>
+        <h4><?php echo $product->price; ?></h4>
       </div>
-      <button type="button" class="btn btn-outline-info">Add to cart</button>
+      <a href="/flamingo/cart/<?php echo "$product->category/$product->id"; ?>" class="btn btn-outline-info">Add to cart</a>
     </div>
   </div>
 </div>

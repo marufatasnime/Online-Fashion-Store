@@ -11,7 +11,9 @@
         
         <div class="col-md-8">
           <input id="user_id" class="form-control" 
-            type="number" name="user_id" value="" required autocomplete="user_id">
+            type="number" name="user_id" value="<?php old_value('user_id'); ?>" 
+            required autocomplete="user_id">
+          <div> <?php form_error('user_id'); ?> </div>
         </div>
       </div>
 
@@ -21,6 +23,7 @@
         <div class="col-md-8">
           <input id="password" class="form-control" 
             type="password" name="password" value="" autocomplete="new_password">
+          <div> <?php form_error('password'); ?> </div>
         </div>
       </div>
 

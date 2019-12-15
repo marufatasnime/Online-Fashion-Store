@@ -1,10 +1,14 @@
 <?php 
 
+require_once 'Cart.php';
+
 class User {
 
   public $first_name;
   public $last_name;
   public $user_id;
+  public $session_id;
+  public $cart;
   private $password;
 
   public function __construct($first_name, $last_name, $user_id, $password) {
@@ -44,12 +48,19 @@ class User {
   }
 
   public function login() {
-    session_start();
+    //session_start();
+    date_default_timezone_set("Asia/Dhaka");
+    $time = date('YmdHis');
+    $this->session_id = $time.$this->user_id;
+    $this->cart = new Cart($this->session_id);
+    //echo $this->session_id;
     $_SESSION['logged_in'] = true;
     $_SESSION['user'] = $this;
+    $_SESSION['cart_items'] = 0;
   }
 
   public function logout() {
+    $_SESSION['user']->cart->remove_all();
     session_unset();
     session_destroy();
   }

@@ -14,10 +14,8 @@ class ProductsController extends Controller {
   }
 
   public function show($category_id, $product_id) {
-    if (is_numeric($category_id) && is_numeric($product_id)) {
-      $context['product'] = Product::find($category_id, $product_id);
-      //return Views::render_JSON($context);
-      return Views::render_template('product', $context);
-    }
+    $context['product'] = Product::find($category_id, $product_id);
+    //return Views::render_JSON($context);
+    return Views::render_template('product', $context);
   }
 }

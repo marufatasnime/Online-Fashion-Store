@@ -5,7 +5,7 @@ class Product {
   public $id;
   public $name;
   public $price;
-  private $quantity_left;
+  public $quantity_left;
   private $cost;
 
   public function __construct($category, $id, $name, $price, $quantity_left=NULL, $cost=NULL) {
@@ -44,10 +44,19 @@ class Product {
     $product = NULL;
     if($result->num_rows == 1) {
       $row = $result->fetch_assoc();
-      $product = new Product($row['categoryID'], $row['productID'], $row['name'], $row['price']);
+      $product = new Product($row['categoryID'], $row['productID'], $row['name'], $row['price'], $row['quantityLeft']);
     }
     $connection->close();
     return $product;
+  }
+
+  public function update_quantity_left() {
+    $connection = Database::get_connection();
+    $sql = "UPDATE product_details SET quantityLeft = {$this->quantity_left} WHERE productID = {$this->id} AND categoryID = {$this->category}";
+    $result = $connection->query($sql);
+    if($connection->query($sql) !== true)
+      throw new Exception($connection->error);
+    $connection->close();
   }
 
   private function all_in_range($view) {

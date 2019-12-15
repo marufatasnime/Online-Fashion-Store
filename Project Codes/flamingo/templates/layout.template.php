@@ -17,7 +17,7 @@
   <?php include 'includes/_navbar.php'; ?>
   <?php include 'includes/_messages.php'; ?>
   
-  <?php block_body($context) ?>
+  <?php block_body($context); ?>
 
   <!-- BOOTSTRAP JS includes -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
